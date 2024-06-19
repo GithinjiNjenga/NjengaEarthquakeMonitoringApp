@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		652D92AC2C21A4EA00DA53A7 /* NjengaEartquakeMonitoringApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NjengaEartquakeMonitoringApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		652D92AC2C21A4EA00DA53A7 /* EarthquakeMonitoringApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EarthquakeMonitoringApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		652D92AF2C21A4EA00DA53A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		652D92B12C21A4EA00DA53A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		652D92B32C21A4EA00DA53A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		652D92AD2C21A4EA00DA53A7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				652D92AC2C21A4EA00DA53A7 /* NjengaEartquakeMonitoringApp.app */,
+				652D92AC2C21A4EA00DA53A7 /* EarthquakeMonitoringApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,9 +70,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		652D92AB2C21A4EA00DA53A7 /* NjengaEartquakeMonitoringApp */ = {
+		652D92AB2C21A4EA00DA53A7 /* EarthquakeMonitoringApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 652D92C02C21A4EC00DA53A7 /* Build configuration list for PBXNativeTarget "NjengaEartquakeMonitoringApp" */;
+			buildConfigurationList = 652D92C02C21A4EC00DA53A7 /* Build configuration list for PBXNativeTarget "EarthquakeMonitoringApp" */;
 			buildPhases = (
 				652D92A82C21A4EA00DA53A7 /* Sources */,
 				652D92A92C21A4EA00DA53A7 /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = NjengaEartquakeMonitoringApp;
+			name = EarthquakeMonitoringApp;
 			productName = NjengaEartquakeMonitoringApp;
-			productReference = 652D92AC2C21A4EA00DA53A7 /* NjengaEartquakeMonitoringApp.app */;
+			productReference = 652D92AC2C21A4EA00DA53A7 /* EarthquakeMonitoringApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 652D92A72C21A4EA00DA53A7 /* Build configuration list for PBXProject "NjengaEartquakeMonitoringApp" */;
+			buildConfigurationList = 652D92A72C21A4EA00DA53A7 /* Build configuration list for PBXProject "EarthquakeMonitoringApp" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				652D92AB2C21A4EA00DA53A7 /* NjengaEartquakeMonitoringApp */,
+				652D92AB2C21A4EA00DA53A7 /* EarthquakeMonitoringApp */,
 			);
 		};
 /* End PBXProject section */
@@ -344,7 +344,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		652D92A72C21A4EA00DA53A7 /* Build configuration list for PBXProject "NjengaEartquakeMonitoringApp" */ = {
+		652D92A72C21A4EA00DA53A7 /* Build configuration list for PBXProject "EarthquakeMonitoringApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				652D92BE2C21A4EC00DA53A7 /* Debug */,
@@ -353,7 +353,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		652D92C02C21A4EC00DA53A7 /* Build configuration list for PBXNativeTarget "NjengaEartquakeMonitoringApp" */ = {
+		652D92C02C21A4EC00DA53A7 /* Build configuration list for PBXNativeTarget "EarthquakeMonitoringApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				652D92C12C21A4EC00DA53A7 /* Debug */,
