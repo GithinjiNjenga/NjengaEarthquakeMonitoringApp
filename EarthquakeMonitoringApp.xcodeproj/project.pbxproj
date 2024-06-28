@@ -7,20 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65030F352C2E8D8100CB1306 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65030F342C2E8D8100CB1306 /* NextViewController.swift */; };
+		65030F372C2E927300CB1306 /* EarthquakeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65030F362C2E927300CB1306 /* EarthquakeModel.swift */; };
 		652D92B02C21A4EA00DA53A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652D92AF2C21A4EA00DA53A7 /* AppDelegate.swift */; };
 		652D92B22C21A4EA00DA53A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652D92B12C21A4EA00DA53A7 /* SceneDelegate.swift */; };
 		652D92B42C21A4EA00DA53A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652D92B32C21A4EA00DA53A7 /* ViewController.swift */; };
-		652D92B72C21A4EA00DA53A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652D92B52C21A4EA00DA53A7 /* Main.storyboard */; };
 		652D92B92C21A4EC00DA53A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 652D92B82C21A4EC00DA53A7 /* Assets.xcassets */; };
 		652D92BC2C21A4EC00DA53A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652D92BA2C21A4EC00DA53A7 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		65030F342C2E8D8100CB1306 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		65030F362C2E927300CB1306 /* EarthquakeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeModel.swift; sourceTree = "<group>"; };
 		652D92AC2C21A4EA00DA53A7 /* EarthquakeMonitoringApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EarthquakeMonitoringApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		652D92AF2C21A4EA00DA53A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		652D92B12C21A4EA00DA53A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		652D92B32C21A4EA00DA53A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		652D92B62C21A4EA00DA53A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		652D92B82C21A4EC00DA53A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		652D92BB2C21A4EC00DA53A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		652D92BD2C21A4EC00DA53A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,8 +60,9 @@
 			children = (
 				652D92AF2C21A4EA00DA53A7 /* AppDelegate.swift */,
 				652D92B12C21A4EA00DA53A7 /* SceneDelegate.swift */,
+				65030F362C2E927300CB1306 /* EarthquakeModel.swift */,
+				65030F342C2E8D8100CB1306 /* NextViewController.swift */,
 				652D92B32C21A4EA00DA53A7 /* ViewController.swift */,
-				652D92B52C21A4EA00DA53A7 /* Main.storyboard */,
 				652D92B82C21A4EC00DA53A7 /* Assets.xcassets */,
 				652D92BA2C21A4EC00DA53A7 /* LaunchScreen.storyboard */,
 				652D92BD2C21A4EC00DA53A7 /* Info.plist */,
@@ -127,7 +130,6 @@
 			files = (
 				652D92BC2C21A4EC00DA53A7 /* LaunchScreen.storyboard in Resources */,
 				652D92B92C21A4EC00DA53A7 /* Assets.xcassets in Resources */,
-				652D92B72C21A4EA00DA53A7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +141,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				652D92B42C21A4EA00DA53A7 /* ViewController.swift in Sources */,
+				65030F372C2E927300CB1306 /* EarthquakeModel.swift in Sources */,
+				65030F352C2E8D8100CB1306 /* NextViewController.swift in Sources */,
 				652D92B02C21A4EA00DA53A7 /* AppDelegate.swift in Sources */,
 				652D92B22C21A4EA00DA53A7 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +151,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		652D92B52C21A4EA00DA53A7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				652D92B62C21A4EA00DA53A7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		652D92BA2C21A4EC00DA53A7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,7 +292,6 @@
 				INFOPLIST_FILE = NjengaEartquakeMonitoringApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -324,7 +319,6 @@
 				INFOPLIST_FILE = NjengaEartquakeMonitoringApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
