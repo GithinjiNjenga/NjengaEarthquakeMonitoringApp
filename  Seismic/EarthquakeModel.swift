@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 struct Tremor: Codable {
     var type: String
     var metadata: Metadata
@@ -33,33 +34,25 @@ struct Property: Codable {
     var mag: Double?
     var place: String
     var time: Int
-    var updated: Int?
-    var tz: Int?
-    var url: String
-    var detail: String
-    var felt: Int?
-    var cdi: Double?
-    var mmi: Double?
-    var alert: String?
-    var status: String
-    var tsunami: Int
-    var sig: Int
-    var net: String
-    var code: String
-    var ids: String
-    var sources: String
-    var types: String
-    var nst: Int?
-    var dmin: Double?
-    var rms: Double
-    var gap: Int?
     var magType: String
     var title: String
-
-   
+    var detail: String
 }
 
 struct Geometry: Codable {
     var type: String
-    var coordinates: [Double]
+    var coordinates: [Double]?
+}
+
+
+func decodeTremor(from jsonData: Data) {
+    let decoder = JSONDecoder.customDecoder()
+    
+    do {
+        let tremor = try decoder.decode(Tremor.self, from: jsonData)
+        print("Decoded tremor data: \(tremor)")
+    
+    } catch {
+        print("Error decoding JSON: \(error)")
+    }
 }
