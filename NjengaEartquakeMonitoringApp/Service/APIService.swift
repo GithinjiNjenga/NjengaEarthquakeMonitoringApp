@@ -59,13 +59,13 @@ class EarthquakeService {
 
                     
 
-                    let earthquakes = earthquakeResponse.features.map { feature -> Earthquake in
+                    let earthquakes = earthquakeResponse.features.map { feature -> Tremor in
 
-                        return Earthquake(
+                        return Tremor(
 
                             id: feature.id,
 
-                            magnitude: feature.properties.mag,
+                            Magnitude: feature.properties.mag,
 
                             place: feature.properties.place,
 
@@ -93,11 +93,7 @@ class EarthquakeService {
 
             }
 
-            
-
             task.resume()
-
-            
 
             return Disposables.create {
 

@@ -14,9 +14,11 @@
 		652D92B42C21A4EA00DA53A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652D92B32C21A4EA00DA53A7 /* ViewController.swift */; };
 		652D92B92C21A4EC00DA53A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 652D92B82C21A4EC00DA53A7 /* Assets.xcassets */; };
 		652D92BC2C21A4EC00DA53A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652D92BA2C21A4EC00DA53A7 /* LaunchScreen.storyboard */; };
-		E4164B3D2C341E7400CE96D5 /* TremorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4164B3C2C341E7400CE96D5 /* TremorViewModel.swift */; };
-		E4164B412C341F3800CE96D5 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4164B402C341F3800CE96D5 /* Service.swift */; };
+		E4164B3D2C341E7400CE96D5 /* EarthquakeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4164B3C2C341E7400CE96D5 /* EarthquakeViewModel.swift */; };
+		E4164B412C341F3800CE96D5 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4164B402C341F3800CE96D5 /* APIService.swift */; };
 		E4164B432C3422DF00CE96D5 /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4164B422C3422DF00CE96D5 /* JSONDecoder.swift */; };
+		E44D20312C357A71009C9818 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = E44D20302C357A71009C9818 /* RxCocoa */; };
+		E44D20332C357C96009C9818 /* EarthquakeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44D20322C357C96009C9818 /* EarthquakeResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +31,10 @@
 		652D92B82C21A4EC00DA53A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		652D92BB2C21A4EC00DA53A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		652D92BD2C21A4EC00DA53A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E4164B3C2C341E7400CE96D5 /* TremorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TremorViewModel.swift; sourceTree = "<group>"; };
-		E4164B402C341F3800CE96D5 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		E4164B3C2C341E7400CE96D5 /* EarthquakeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeViewModel.swift; sourceTree = "<group>"; };
+		E4164B402C341F3800CE96D5 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		E4164B422C3422DF00CE96D5 /* JSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoder.swift; sourceTree = "<group>"; };
+		E44D20322C357C96009C9818 /* EarthquakeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E44D20312C357A71009C9818 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,7 +74,6 @@
 				E4164B3A2C341E3600CE96D5 /* Model */,
 				652D92AF2C21A4EA00DA53A7 /* AppDelegate.swift */,
 				652D92B12C21A4EA00DA53A7 /* SceneDelegate.swift */,
-				65030F362C2E927300CB1306 /* EarthquakeModel.swift */,
 				652D92B82C21A4EC00DA53A7 /* Assets.xcassets */,
 				652D92BA2C21A4EC00DA53A7 /* LaunchScreen.storyboard */,
 				652D92BD2C21A4EC00DA53A7 /* Info.plist */,
@@ -82,6 +85,8 @@
 		E4164B3A2C341E3600CE96D5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				65030F362C2E927300CB1306 /* EarthquakeModel.swift */,
+				E44D20322C357C96009C9818 /* EarthquakeResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -89,7 +94,7 @@
 		E4164B3B2C341E3E00CE96D5 /* TheViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				E4164B3C2C341E7400CE96D5 /* TremorViewModel.swift */,
+				E4164B3C2C341E7400CE96D5 /* EarthquakeViewModel.swift */,
 			);
 			path = TheViewModel;
 			sourceTree = "<group>";
@@ -106,7 +111,7 @@
 		E4164B3F2C341F2500CE96D5 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				E4164B402C341F3800CE96D5 /* Service.swift */,
+				E4164B402C341F3800CE96D5 /* APIService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -127,6 +132,9 @@
 			dependencies = (
 			);
 			name = EarthquakeMonitoringApp;
+			packageProductDependencies = (
+				E44D20302C357A71009C9818 /* RxCocoa */,
+			);
 			productName = NjengaEartquakeMonitoringApp;
 			productReference = 652D92AC2C21A4EA00DA53A7 /* EarthquakeMonitoringApp.app */;
 			productType = "com.apple.product-type.application";
@@ -155,6 +163,9 @@
 				Base,
 			);
 			mainGroup = 652D92A32C21A4EA00DA53A7;
+			packageReferences = (
+				E44D202F2C357A71009C9818 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 652D92AD2C21A4EA00DA53A7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -182,8 +193,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				652D92B42C21A4EA00DA53A7 /* ViewController.swift in Sources */,
-				E4164B412C341F3800CE96D5 /* Service.swift in Sources */,
-				E4164B3D2C341E7400CE96D5 /* TremorViewModel.swift in Sources */,
+				E44D20332C357C96009C9818 /* EarthquakeResponse.swift in Sources */,
+				E4164B412C341F3800CE96D5 /* APIService.swift in Sources */,
+				E4164B3D2C341E7400CE96D5 /* EarthquakeViewModel.swift in Sources */,
 				65030F372C2E927300CB1306 /* EarthquakeModel.swift in Sources */,
 				E4164B432C3422DF00CE96D5 /* JSONDecoder.swift in Sources */,
 				65030F352C2E8D8100CB1306 /* NextViewController.swift in Sources */,
@@ -401,6 +413,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E44D202F2C357A71009C9818 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E44D20302C357A71009C9818 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E44D202F2C357A71009C9818 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 652D92A42C21A4EA00DA53A7 /* Project object */;
 }
