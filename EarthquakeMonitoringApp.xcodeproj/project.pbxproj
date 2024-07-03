@@ -14,6 +14,9 @@
 		652D92B42C21A4EA00DA53A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652D92B32C21A4EA00DA53A7 /* ViewController.swift */; };
 		652D92B92C21A4EC00DA53A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 652D92B82C21A4EC00DA53A7 /* Assets.xcassets */; };
 		652D92BC2C21A4EC00DA53A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652D92BA2C21A4EC00DA53A7 /* LaunchScreen.storyboard */; };
+		E4164B3D2C341E7400CE96D5 /* TremorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4164B3C2C341E7400CE96D5 /* TremorViewModel.swift */; };
+		E4164B412C341F3800CE96D5 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4164B402C341F3800CE96D5 /* Service.swift */; };
+		E4164B432C3422DF00CE96D5 /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4164B422C3422DF00CE96D5 /* JSONDecoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		652D92B82C21A4EC00DA53A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		652D92BB2C21A4EC00DA53A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		652D92BD2C21A4EC00DA53A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4164B3C2C341E7400CE96D5 /* TremorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TremorViewModel.swift; sourceTree = "<group>"; };
+		E4164B402C341F3800CE96D5 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		E4164B422C3422DF00CE96D5 /* JSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +64,51 @@
 		652D92AE2C21A4EA00DA53A7 /* NjengaEartquakeMonitoringApp */ = {
 			isa = PBXGroup;
 			children = (
+				E4164B3F2C341F2500CE96D5 /* Service */,
+				E4164B3E2C341E9900CE96D5 /* TremorView */,
+				E4164B3B2C341E3E00CE96D5 /* TheViewModel */,
+				E4164B3A2C341E3600CE96D5 /* Model */,
 				652D92AF2C21A4EA00DA53A7 /* AppDelegate.swift */,
 				652D92B12C21A4EA00DA53A7 /* SceneDelegate.swift */,
 				65030F362C2E927300CB1306 /* EarthquakeModel.swift */,
-				65030F342C2E8D8100CB1306 /* NextViewController.swift */,
-				652D92B32C21A4EA00DA53A7 /* ViewController.swift */,
 				652D92B82C21A4EC00DA53A7 /* Assets.xcassets */,
 				652D92BA2C21A4EC00DA53A7 /* LaunchScreen.storyboard */,
 				652D92BD2C21A4EC00DA53A7 /* Info.plist */,
+				E4164B422C3422DF00CE96D5 /* JSONDecoder.swift */,
 			);
 			path = NjengaEartquakeMonitoringApp;
+			sourceTree = "<group>";
+		};
+		E4164B3A2C341E3600CE96D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E4164B3B2C341E3E00CE96D5 /* TheViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E4164B3C2C341E7400CE96D5 /* TremorViewModel.swift */,
+			);
+			path = TheViewModel;
+			sourceTree = "<group>";
+		};
+		E4164B3E2C341E9900CE96D5 /* TremorView */ = {
+			isa = PBXGroup;
+			children = (
+				65030F342C2E8D8100CB1306 /* NextViewController.swift */,
+				652D92B32C21A4EA00DA53A7 /* ViewController.swift */,
+			);
+			path = TremorView;
+			sourceTree = "<group>";
+		};
+		E4164B3F2C341F2500CE96D5 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E4164B402C341F3800CE96D5 /* Service.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +182,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				652D92B42C21A4EA00DA53A7 /* ViewController.swift in Sources */,
+				E4164B412C341F3800CE96D5 /* Service.swift in Sources */,
+				E4164B3D2C341E7400CE96D5 /* TremorViewModel.swift in Sources */,
 				65030F372C2E927300CB1306 /* EarthquakeModel.swift in Sources */,
+				E4164B432C3422DF00CE96D5 /* JSONDecoder.swift in Sources */,
 				65030F352C2E8D8100CB1306 /* NextViewController.swift in Sources */,
 				652D92B02C21A4EA00DA53A7 /* AppDelegate.swift in Sources */,
 				652D92B22C21A4EA00DA53A7 /* SceneDelegate.swift in Sources */,
