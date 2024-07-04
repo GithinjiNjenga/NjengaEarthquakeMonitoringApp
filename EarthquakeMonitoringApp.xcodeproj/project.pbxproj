@@ -7,22 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		65030F352C2E8D8100CB1306 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65030F342C2E8D8100CB1306 /* NextViewController.swift */; };
 		65030F372C2E927300CB1306 /* EarthquakeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65030F362C2E927300CB1306 /* EarthquakeModel.swift */; };
 		652D92B02C21A4EA00DA53A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652D92AF2C21A4EA00DA53A7 /* AppDelegate.swift */; };
 		652D92B22C21A4EA00DA53A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652D92B12C21A4EA00DA53A7 /* SceneDelegate.swift */; };
 		652D92B42C21A4EA00DA53A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652D92B32C21A4EA00DA53A7 /* ViewController.swift */; };
 		652D92B92C21A4EC00DA53A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 652D92B82C21A4EC00DA53A7 /* Assets.xcassets */; };
 		652D92BC2C21A4EC00DA53A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652D92BA2C21A4EC00DA53A7 /* LaunchScreen.storyboard */; };
+		6569DD202C3C194500EE61EE /* RxBlocking-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 6569DD1F2C3C194500EE61EE /* RxBlocking-Dynamic */; };
+		6569DD222C3C194500EE61EE /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 6569DD212C3C194500EE61EE /* RxCocoa */; };
+		6569DD242C3C194500EE61EE /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6569DD232C3C194500EE61EE /* RxSwift */; };
 		E4164B3D2C341E7400CE96D5 /* EarthquakeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4164B3C2C341E7400CE96D5 /* EarthquakeViewModel.swift */; };
 		E4164B412C341F3800CE96D5 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4164B402C341F3800CE96D5 /* APIService.swift */; };
-		E4164B432C3422DF00CE96D5 /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4164B422C3422DF00CE96D5 /* JSONDecoder.swift */; };
-		E44D20312C357A71009C9818 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = E44D20302C357A71009C9818 /* RxCocoa */; };
 		E44D20332C357C96009C9818 /* EarthquakeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44D20322C357C96009C9818 /* EarthquakeResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		65030F342C2E8D8100CB1306 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 		65030F362C2E927300CB1306 /* EarthquakeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeModel.swift; sourceTree = "<group>"; };
 		652D92AC2C21A4EA00DA53A7 /* EarthquakeMonitoringApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EarthquakeMonitoringApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		652D92AF2C21A4EA00DA53A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -33,7 +32,6 @@
 		652D92BD2C21A4EC00DA53A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4164B3C2C341E7400CE96D5 /* EarthquakeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeViewModel.swift; sourceTree = "<group>"; };
 		E4164B402C341F3800CE96D5 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
-		E4164B422C3422DF00CE96D5 /* JSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoder.swift; sourceTree = "<group>"; };
 		E44D20322C357C96009C9818 /* EarthquakeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -42,7 +40,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E44D20312C357A71009C9818 /* RxCocoa in Frameworks */,
+				6569DD242C3C194500EE61EE /* RxSwift in Frameworks */,
+				6569DD222C3C194500EE61EE /* RxCocoa in Frameworks */,
+				6569DD202C3C194500EE61EE /* RxBlocking-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +77,6 @@
 				652D92B82C21A4EC00DA53A7 /* Assets.xcassets */,
 				652D92BA2C21A4EC00DA53A7 /* LaunchScreen.storyboard */,
 				652D92BD2C21A4EC00DA53A7 /* Info.plist */,
-				E4164B422C3422DF00CE96D5 /* JSONDecoder.swift */,
 			);
 			path = NjengaEartquakeMonitoringApp;
 			sourceTree = "<group>";
@@ -102,7 +101,6 @@
 		E4164B3E2C341E9900CE96D5 /* TremorView */ = {
 			isa = PBXGroup;
 			children = (
-				65030F342C2E8D8100CB1306 /* NextViewController.swift */,
 				652D92B32C21A4EA00DA53A7 /* ViewController.swift */,
 			);
 			path = TremorView;
@@ -133,7 +131,9 @@
 			);
 			name = EarthquakeMonitoringApp;
 			packageProductDependencies = (
-				E44D20302C357A71009C9818 /* RxCocoa */,
+				6569DD1F2C3C194500EE61EE /* RxBlocking-Dynamic */,
+				6569DD212C3C194500EE61EE /* RxCocoa */,
+				6569DD232C3C194500EE61EE /* RxSwift */,
 			);
 			productName = NjengaEartquakeMonitoringApp;
 			productReference = 652D92AC2C21A4EA00DA53A7 /* EarthquakeMonitoringApp.app */;
@@ -164,7 +164,7 @@
 			);
 			mainGroup = 652D92A32C21A4EA00DA53A7;
 			packageReferences = (
-				E44D202F2C357A71009C9818 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				6569DD1E2C3C194500EE61EE /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = 652D92AD2C21A4EA00DA53A7 /* Products */;
 			projectDirPath = "";
@@ -197,8 +197,6 @@
 				E4164B412C341F3800CE96D5 /* APIService.swift in Sources */,
 				E4164B3D2C341E7400CE96D5 /* EarthquakeViewModel.swift in Sources */,
 				65030F372C2E927300CB1306 /* EarthquakeModel.swift in Sources */,
-				E4164B432C3422DF00CE96D5 /* JSONDecoder.swift in Sources */,
-				65030F352C2E8D8100CB1306 /* NextViewController.swift in Sources */,
 				652D92B02C21A4EA00DA53A7 /* AppDelegate.swift in Sources */,
 				652D92B22C21A4EA00DA53A7 /* SceneDelegate.swift in Sources */,
 			);
@@ -415,9 +413,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		E44D202F2C357A71009C9818 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+		6569DD1E2C3C194500EE61EE /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 6.7.1;
@@ -426,10 +424,20 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E44D20302C357A71009C9818 /* RxCocoa */ = {
+		6569DD1F2C3C194500EE61EE /* RxBlocking-Dynamic */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E44D202F2C357A71009C9818 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			package = 6569DD1E2C3C194500EE61EE /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxBlocking-Dynamic";
+		};
+		6569DD212C3C194500EE61EE /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6569DD1E2C3C194500EE61EE /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxCocoa;
+		};
+		6569DD232C3C194500EE61EE /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6569DD1E2C3C194500EE61EE /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

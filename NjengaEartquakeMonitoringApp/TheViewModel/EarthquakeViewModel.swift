@@ -14,7 +14,7 @@ class EarthquakeViewModel {
     private let earthquakeService: EarthquakeService
     private let disposeBag = DisposeBag()
 
-    // Inputs
+    
     let fetchEarthquakes = PublishSubject<Void>()
     let searchText = PublishSubject<String>()
 
