@@ -20,8 +20,8 @@ class EarthquakeViewModel {
 
     // Outputs
     let earthquakes = PublishSubject<[Tremor]>()
-    private(set) var filteredTremors = [Tremor]()
-
+//    private(set) var filteredTremors = [Tremor]()
+     let filteredTremors = BehaviorRelay<[Tremor]>(value: [])
     private var allTremors = [Tremor]()
 
     init(earthquakeService: EarthquakeService = EarthquakeService()) {
@@ -49,11 +49,24 @@ class EarthquakeViewModel {
             .disposed(by: disposeBag)
     }
 
+//    func filterTremors(with searchText: String) {
+//        if searchText.isEmpty {
+//            filteredTremors = allTremors
+//        } else {
+//            filteredTremors = allTremors.filter { $0.place.contains(searchText) }
+//        }
+//    }
+    
     func filterTremors(with searchText: String) {
-        if searchText.isEmpty {
-            filteredTremors = allTremors
-        } else {
-            filteredTremors = allTremors.filter { $0.place.contains(searchText) }
+            if searchText.isEmpty {
+                filteredTremors.accept(allTremors)
+            } else {
+                let filtered = allTremors.filter { $0.place.contains(searchText) }
+                filteredTremors.accept(filtered)
+            }
         }
-    }
+
+        var filteredTremorsObservable: Observable<[Tremor]> {
+            return filteredTremors.asObservable()
+        }
 }
