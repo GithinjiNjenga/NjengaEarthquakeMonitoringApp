@@ -261,7 +261,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UISearchBarDe
     let searchBar: UISearchBar = {
         let searchBar = UISearchBar()
         searchBar.backgroundColor = .systemBackground
-        searchBar.placeholder = "Search"
+        searchBar.placeholder = "Enter Location"
         return searchBar
     }()
 
