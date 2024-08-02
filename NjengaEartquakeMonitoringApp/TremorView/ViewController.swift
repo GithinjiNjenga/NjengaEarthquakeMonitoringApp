@@ -256,7 +256,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UISearchBarDe
         tableView.largeContentTitle = "Data"
         tableView.showsVerticalScrollIndicator = true
         return tableView
-    }().
+    }()
 
     let searchBar: UISearchBar = {
         let searchBar = UISearchBar()
